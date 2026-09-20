@@ -1,13 +1,16 @@
 // ---------------------------------------------------------------
 // EDIT ME: replace placeholder business details, phone numbers and
 // office addresses below with your real information before launch.
+// 'image' fields take a filename inside an images/ folder next to
+// index.html (e.g. "BAT-001.jpg"); leave empty to show a placeholder.
 // ---------------------------------------------------------------
 const CONFIG = {
   "businessName": "MP AutoPower",
   "tagline": "Batteries & Tyres for Every Ride Across Madhya Pradesh",
   "phone": "+91 90000 00001",
   "phoneDial": "+919000000001",
-  "whatsapp": "919000000001",
+  "whatsapp": "919893371053",
+  "whatsappDisplay": "+91 98933 71053",
   "email": "care@mpautopower.example"
 };
 
@@ -87,7 +90,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 36,
     "mrp": 15750,
-    "priceWithExchange": 14650
+    "priceWithExchange": 14650,
+    "image": ""
   },
   {
     "id": "BAT-002",
@@ -103,7 +107,8 @@ const BATTERIES = [
     "ah": 35,
     "warrantyMonths": 24,
     "mrp": 7350,
-    "priceWithExchange": 6710
+    "priceWithExchange": 6710,
+    "image": ""
   },
   {
     "id": "BAT-003",
@@ -119,7 +124,8 @@ const BATTERIES = [
     "ah": 65,
     "warrantyMonths": 24,
     "mrp": 13650,
-    "priceWithExchange": 12510
+    "priceWithExchange": 12510,
+    "image": ""
   },
   {
     "id": "BAT-004",
@@ -135,7 +141,8 @@ const BATTERIES = [
     "ah": 2.5,
     "warrantyMonths": 18,
     "mrp": 650,
-    "priceWithExchange": 600
+    "priceWithExchange": 600,
+    "image": ""
   },
   {
     "id": "BAT-005",
@@ -151,7 +158,8 @@ const BATTERIES = [
     "ah": 9,
     "warrantyMonths": 18,
     "mrp": 2340,
-    "priceWithExchange": 2130
+    "priceWithExchange": 2130,
+    "image": ""
   },
   {
     "id": "BAT-006",
@@ -167,7 +175,8 @@ const BATTERIES = [
     "ah": 7,
     "warrantyMonths": 30,
     "mrp": 1820,
-    "priceWithExchange": 1690
+    "priceWithExchange": 1690,
+    "image": ""
   },
   {
     "id": "BAT-007",
@@ -182,7 +191,8 @@ const BATTERIES = [
     "ah": 180,
     "warrantyMonths": 42,
     "mrp": 29700,
-    "priceWithExchange": 27090
+    "priceWithExchange": 27090,
+    "image": ""
   },
   {
     "id": "BAT-008",
@@ -197,7 +207,8 @@ const BATTERIES = [
     "ah": 150,
     "warrantyMonths": 48,
     "mrp": 24750,
-    "priceWithExchange": 23110
+    "priceWithExchange": 23110,
+    "image": ""
   },
   {
     "id": "BAT-009",
@@ -214,7 +225,8 @@ const BATTERIES = [
     "ah": 120,
     "warrantyMonths": 18,
     "mrp": 23400,
-    "priceWithExchange": 21910
+    "priceWithExchange": 21910,
+    "image": ""
   },
   {
     "id": "BAT-010",
@@ -231,7 +243,8 @@ const BATTERIES = [
     "ah": 88,
     "warrantyMonths": 24,
     "mrp": 17160,
-    "priceWithExchange": 15950
+    "priceWithExchange": 15950,
+    "image": ""
   },
   {
     "id": "BAT-011",
@@ -247,7 +260,8 @@ const BATTERIES = [
     "ah": 88,
     "warrantyMonths": 30,
     "mrp": 18040,
-    "priceWithExchange": 16870
+    "priceWithExchange": 16870,
+    "image": ""
   },
   {
     "id": "BAT-012",
@@ -263,7 +277,8 @@ const BATTERIES = [
     "ah": 120,
     "warrantyMonths": 18,
     "mrp": 24600,
-    "priceWithExchange": 22580
+    "priceWithExchange": 22580,
+    "image": ""
   },
   {
     "id": "BAT-013",
@@ -279,7 +294,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 30,
     "mrp": 17010,
-    "priceWithExchange": 15510
+    "priceWithExchange": 15510,
+    "image": ""
   },
   {
     "id": "BAT-014",
@@ -295,7 +311,8 @@ const BATTERIES = [
     "ah": 65,
     "warrantyMonths": 30,
     "mrp": 14740,
-    "priceWithExchange": 13400
+    "priceWithExchange": 13400,
+    "image": ""
   },
   {
     "id": "BAT-015",
@@ -311,7 +328,8 @@ const BATTERIES = [
     "ah": 44,
     "warrantyMonths": 30,
     "mrp": 9980,
-    "priceWithExchange": 9040
+    "priceWithExchange": 9040,
+    "image": ""
   },
   {
     "id": "BAT-016",
@@ -327,7 +345,8 @@ const BATTERIES = [
     "ah": 5,
     "warrantyMonths": 24,
     "mrp": 1400,
-    "priceWithExchange": 1310
+    "priceWithExchange": 1310,
+    "image": ""
   },
   {
     "id": "BAT-017",
@@ -343,7 +362,8 @@ const BATTERIES = [
     "ah": 4,
     "warrantyMonths": 18,
     "mrp": 1120,
-    "priceWithExchange": 1020
+    "priceWithExchange": 1020,
+    "image": ""
   },
   {
     "id": "BAT-018",
@@ -359,7 +379,8 @@ const BATTERIES = [
     "ah": 9,
     "warrantyMonths": 12,
     "mrp": 2530,
-    "priceWithExchange": 2320
+    "priceWithExchange": 2320,
+    "image": ""
   },
   {
     "id": "BAT-019",
@@ -376,7 +397,8 @@ const BATTERIES = [
     "ah": 100,
     "warrantyMonths": 12,
     "mrp": 21060,
-    "priceWithExchange": 19660
+    "priceWithExchange": 19660,
+    "image": ""
   },
   {
     "id": "BAT-020",
@@ -393,7 +415,8 @@ const BATTERIES = [
     "ah": 150,
     "warrantyMonths": 18,
     "mrp": 31590,
-    "priceWithExchange": 28440
+    "priceWithExchange": 28440,
+    "image": ""
   },
   {
     "id": "BAT-021",
@@ -409,7 +432,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 36,
     "mrp": 14960,
-    "priceWithExchange": 13560
+    "priceWithExchange": 13560,
+    "image": ""
   },
   {
     "id": "BAT-022",
@@ -425,7 +449,8 @@ const BATTERIES = [
     "ah": 65,
     "warrantyMonths": 30,
     "mrp": 12970,
-    "priceWithExchange": 11770
+    "priceWithExchange": 11770,
+    "image": ""
   },
   {
     "id": "BAT-023",
@@ -441,7 +466,8 @@ const BATTERIES = [
     "ah": 38,
     "warrantyMonths": 42,
     "mrp": 7580,
-    "priceWithExchange": 7040
+    "priceWithExchange": 7040,
+    "image": ""
   },
   {
     "id": "BAT-024",
@@ -457,7 +483,8 @@ const BATTERIES = [
     "ah": 3,
     "warrantyMonths": 30,
     "mrp": 740,
-    "priceWithExchange": 680
+    "priceWithExchange": 680,
+    "image": ""
   },
   {
     "id": "BAT-025",
@@ -473,7 +500,8 @@ const BATTERIES = [
     "ah": 7,
     "warrantyMonths": 30,
     "mrp": 1730,
-    "priceWithExchange": 1620
+    "priceWithExchange": 1620,
+    "image": ""
   },
   {
     "id": "BAT-026",
@@ -489,7 +517,8 @@ const BATTERIES = [
     "ah": 4,
     "warrantyMonths": 18,
     "mrp": 990,
-    "priceWithExchange": 900
+    "priceWithExchange": 900,
+    "image": ""
   },
   {
     "id": "BAT-027",
@@ -506,7 +535,8 @@ const BATTERIES = [
     "ah": 150,
     "warrantyMonths": 24,
     "mrp": 27790,
-    "priceWithExchange": 25650
+    "priceWithExchange": 25650,
+    "image": ""
   },
   {
     "id": "BAT-028",
@@ -523,7 +553,8 @@ const BATTERIES = [
     "ah": 120,
     "warrantyMonths": 18,
     "mrp": 22230,
-    "priceWithExchange": 20570
+    "priceWithExchange": 20570,
+    "image": ""
   },
   {
     "id": "BAT-029",
@@ -539,7 +570,8 @@ const BATTERIES = [
     "ah": 100,
     "warrantyMonths": 18,
     "mrp": 19480,
-    "priceWithExchange": 17720
+    "priceWithExchange": 17720,
+    "image": ""
   },
   {
     "id": "BAT-030",
@@ -555,7 +587,8 @@ const BATTERIES = [
     "ah": 120,
     "warrantyMonths": 18,
     "mrp": 23370,
-    "priceWithExchange": 21380
+    "priceWithExchange": 21380,
+    "image": ""
   },
   {
     "id": "BAT-031",
@@ -571,7 +604,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 42,
     "mrp": 14490,
-    "priceWithExchange": 13280
+    "priceWithExchange": 13280,
+    "image": ""
   },
   {
     "id": "BAT-032",
@@ -587,7 +621,8 @@ const BATTERIES = [
     "ah": 55,
     "warrantyMonths": 48,
     "mrp": 10630,
-    "priceWithExchange": 9890
+    "priceWithExchange": 9890,
+    "image": ""
   },
   {
     "id": "BAT-033",
@@ -603,7 +638,8 @@ const BATTERIES = [
     "ah": 35,
     "warrantyMonths": 24,
     "mrp": 6760,
-    "priceWithExchange": 6170
+    "priceWithExchange": 6170,
+    "image": ""
   },
   {
     "id": "BAT-034",
@@ -618,7 +654,8 @@ const BATTERIES = [
     "ah": 100,
     "warrantyMonths": 48,
     "mrp": 15180,
-    "priceWithExchange": 14200
+    "priceWithExchange": 14200,
+    "image": ""
   },
   {
     "id": "BAT-035",
@@ -633,7 +670,8 @@ const BATTERIES = [
     "ah": 180,
     "warrantyMonths": 42,
     "mrp": 27320,
-    "priceWithExchange": 25180
+    "priceWithExchange": 25180,
+    "image": ""
   },
   {
     "id": "BAT-036",
@@ -648,7 +686,8 @@ const BATTERIES = [
     "ah": 220,
     "warrantyMonths": 36,
     "mrp": 31940,
-    "priceWithExchange": 28910
+    "priceWithExchange": 28910,
+    "image": ""
   },
   {
     "id": "BAT-037",
@@ -663,7 +702,8 @@ const BATTERIES = [
     "ah": 150,
     "warrantyMonths": 42,
     "mrp": 21780,
-    "priceWithExchange": 20340
+    "priceWithExchange": 20340,
+    "image": ""
   },
   {
     "id": "BAT-038",
@@ -678,7 +718,8 @@ const BATTERIES = [
     "ah": 120,
     "warrantyMonths": 36,
     "mrp": 19010,
-    "priceWithExchange": 17410
+    "priceWithExchange": 17410,
+    "image": ""
   },
   {
     "id": "BAT-039",
@@ -693,7 +734,8 @@ const BATTERIES = [
     "ah": 180,
     "warrantyMonths": 36,
     "mrp": 28510,
-    "priceWithExchange": 26670
+    "priceWithExchange": 26670,
+    "image": ""
   },
   {
     "id": "BAT-040",
@@ -709,7 +751,8 @@ const BATTERIES = [
     "ah": 44,
     "warrantyMonths": 30,
     "mrp": 8870,
-    "priceWithExchange": 8030
+    "priceWithExchange": 8030,
+    "image": ""
   },
   {
     "id": "BAT-041",
@@ -725,7 +768,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 24,
     "mrp": 15120,
-    "priceWithExchange": 13770
+    "priceWithExchange": 13770,
+    "image": ""
   },
   {
     "id": "BAT-042",
@@ -741,7 +785,8 @@ const BATTERIES = [
     "ah": 38,
     "warrantyMonths": 48,
     "mrp": 7660,
-    "priceWithExchange": 6970
+    "priceWithExchange": 6970,
+    "image": ""
   },
   {
     "id": "BAT-043",
@@ -757,7 +802,8 @@ const BATTERIES = [
     "ah": 38,
     "warrantyMonths": 48,
     "mrp": 9180,
-    "priceWithExchange": 8310
+    "priceWithExchange": 8310,
+    "image": ""
   },
   {
     "id": "BAT-044",
@@ -773,7 +819,8 @@ const BATTERIES = [
     "ah": 55,
     "warrantyMonths": 30,
     "mrp": 13280,
-    "priceWithExchange": 11990
+    "priceWithExchange": 11990,
+    "image": ""
   },
   {
     "id": "BAT-045",
@@ -789,7 +836,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 36,
     "mrp": 18110,
-    "priceWithExchange": 16730
+    "priceWithExchange": 16730,
+    "image": ""
   },
   {
     "id": "BAT-046",
@@ -805,7 +853,8 @@ const BATTERIES = [
     "ah": 75,
     "warrantyMonths": 24,
     "mrp": 16540,
-    "priceWithExchange": 15380
+    "priceWithExchange": 15380,
+    "image": ""
   },
   {
     "id": "BAT-047",
@@ -821,7 +870,8 @@ const BATTERIES = [
     "ah": 44,
     "warrantyMonths": 36,
     "mrp": 9700,
-    "priceWithExchange": 9110
+    "priceWithExchange": 9110,
+    "image": ""
   },
   {
     "id": "BAT-048",
@@ -837,7 +887,8 @@ const BATTERIES = [
     "ah": 55,
     "warrantyMonths": 48,
     "mrp": 12130,
-    "priceWithExchange": 11300
+    "priceWithExchange": 11300,
+    "image": ""
   },
   {
     "id": "BAT-049",
@@ -854,7 +905,8 @@ const BATTERIES = [
     "ah": 88,
     "warrantyMonths": 12,
     "mrp": 18020,
-    "priceWithExchange": 16290
+    "priceWithExchange": 16290,
+    "image": ""
   },
   {
     "id": "BAT-050",
@@ -871,7 +923,8 @@ const BATTERIES = [
     "ah": 180,
     "warrantyMonths": 12,
     "mrp": 36860,
-    "priceWithExchange": 33890
+    "priceWithExchange": 33890,
+    "image": ""
   },
   {
     "id": "BAT-051",
@@ -888,7 +941,8 @@ const BATTERIES = [
     "ah": 120,
     "warrantyMonths": 24,
     "mrp": 25740,
-    "priceWithExchange": 24060
+    "priceWithExchange": 24060,
+    "image": ""
   },
   {
     "id": "BAT-052",
@@ -905,7 +959,8 @@ const BATTERIES = [
     "ah": 140,
     "warrantyMonths": 12,
     "mrp": 30030,
-    "priceWithExchange": 27290
+    "priceWithExchange": 27290,
+    "image": ""
   },
   {
     "id": "BAT-053",
@@ -921,7 +976,8 @@ const BATTERIES = [
     "ah": 135,
     "warrantyMonths": 18,
     "mrp": 30440,
-    "priceWithExchange": 27810
+    "priceWithExchange": 27810,
+    "image": ""
   },
   {
     "id": "BAT-054",
@@ -937,7 +993,8 @@ const BATTERIES = [
     "ah": 88,
     "warrantyMonths": 24,
     "mrp": 19840,
-    "priceWithExchange": 18320
+    "priceWithExchange": 18320,
+    "image": ""
   }
 ];
 
@@ -954,7 +1011,8 @@ const TYRES = [
     ],
     "pattern": "ZLX",
     "size": "215/60 R17",
-    "mrp": 3240
+    "mrp": 3240,
+    "image": ""
   },
   {
     "id": "TYR-002",
@@ -968,7 +1026,8 @@ const TYRES = [
     ],
     "pattern": "Nylogrip Zapper",
     "size": "195/55 R16",
-    "mrp": 4150
+    "mrp": 4150,
+    "image": ""
   },
   {
     "id": "TYR-003",
@@ -982,7 +1041,8 @@ const TYRES = [
     ],
     "pattern": "ZLX",
     "size": "145/80 R12",
-    "mrp": 3470
+    "mrp": 3470,
+    "image": ""
   },
   {
     "id": "TYR-004",
@@ -996,7 +1056,8 @@ const TYRES = [
     ],
     "pattern": "ZVTV",
     "size": "90/90-18",
-    "mrp": 1670
+    "mrp": 1670,
+    "image": ""
   },
   {
     "id": "TYR-005",
@@ -1010,7 +1071,8 @@ const TYRES = [
     ],
     "pattern": "Nylogrip Zapper",
     "size": "120/70-17",
-    "mrp": 1690
+    "mrp": 1690,
+    "image": ""
   },
   {
     "id": "TYR-006",
@@ -1024,7 +1086,8 @@ const TYRES = [
     ],
     "pattern": "ZLX",
     "size": "110/70-17",
-    "mrp": 1680
+    "mrp": 1680,
+    "image": ""
   },
   {
     "id": "TYR-007",
@@ -1038,7 +1101,8 @@ const TYRES = [
     ],
     "pattern": "ZLX",
     "size": "12.00-20",
-    "mrp": 10180
+    "mrp": 10180,
+    "image": ""
   },
   {
     "id": "TYR-008",
@@ -1052,7 +1116,8 @@ const TYRES = [
     ],
     "pattern": "ZLX",
     "size": "7.50-16",
-    "mrp": 11180
+    "mrp": 11180,
+    "image": ""
   },
   {
     "id": "TYR-009",
@@ -1066,7 +1131,8 @@ const TYRES = [
     ],
     "pattern": "Muscle Grip",
     "size": "7.50-16",
-    "mrp": 11180
+    "mrp": 11180,
+    "image": ""
   },
   {
     "id": "TYR-010",
@@ -1080,7 +1146,8 @@ const TYRES = [
     ],
     "pattern": "ZVTV",
     "size": "16.9-28",
-    "mrp": 12570
+    "mrp": 12570,
+    "image": ""
   },
   {
     "id": "TYR-011",
@@ -1094,7 +1161,8 @@ const TYRES = [
     ],
     "pattern": "Muscle Grip",
     "size": "4.00-8",
-    "mrp": 2080
+    "mrp": 2080,
+    "image": ""
   },
   {
     "id": "TYR-012",
@@ -1108,7 +1176,8 @@ const TYRES = [
     ],
     "pattern": "Muscle Grip",
     "size": "6.00-9",
-    "mrp": 2290
+    "mrp": 2290,
+    "image": ""
   },
   {
     "id": "TYR-013",
@@ -1122,7 +1191,8 @@ const TYRES = [
     ],
     "pattern": "Czar HP",
     "size": "215/60 R17",
-    "mrp": 3660
+    "mrp": 3660,
+    "image": ""
   },
   {
     "id": "TYR-014",
@@ -1136,7 +1206,8 @@ const TYRES = [
     ],
     "pattern": "Czar HP",
     "size": "175/65 R14",
-    "mrp": 3050
+    "mrp": 3050,
+    "image": ""
   },
   {
     "id": "TYR-015",
@@ -1150,7 +1221,8 @@ const TYRES = [
     ],
     "pattern": "Gripp XL",
     "size": "165/80 R14",
-    "mrp": 3120
+    "mrp": 3120,
+    "image": ""
   },
   {
     "id": "TYR-016",
@@ -1164,7 +1236,8 @@ const TYRES = [
     ],
     "pattern": "Gripp XL",
     "size": "80/100-18",
-    "mrp": 1330
+    "mrp": 1330,
+    "image": ""
   },
   {
     "id": "TYR-017",
@@ -1178,7 +1251,8 @@ const TYRES = [
     ],
     "pattern": "Czar HP",
     "size": "120/70-17",
-    "mrp": 1560
+    "mrp": 1560,
+    "image": ""
   },
   {
     "id": "TYR-018",
@@ -1192,7 +1266,8 @@ const TYRES = [
     ],
     "pattern": "SecuraDrive",
     "size": "140/60-17",
-    "mrp": 1330
+    "mrp": 1330,
+    "image": ""
   },
   {
     "id": "TYR-019",
@@ -1206,7 +1281,8 @@ const TYRES = [
     ],
     "pattern": "SecuraDrive",
     "size": "12.00-20",
-    "mrp": 7580
+    "mrp": 7580,
+    "image": ""
   },
   {
     "id": "TYR-020",
@@ -1220,7 +1296,8 @@ const TYRES = [
     ],
     "pattern": "Milaze",
     "size": "7.50-16",
-    "mrp": 9320
+    "mrp": 9320,
+    "image": ""
   },
   {
     "id": "TYR-021",
@@ -1234,7 +1311,8 @@ const TYRES = [
     ],
     "pattern": "Milaze",
     "size": "4.00-10",
-    "mrp": 2580
+    "mrp": 2580,
+    "image": ""
   },
   {
     "id": "TYR-022",
@@ -1248,7 +1326,8 @@ const TYRES = [
     ],
     "pattern": "SecuraDrive",
     "size": "6.00-9",
-    "mrp": 2320
+    "mrp": 2320,
+    "image": ""
   },
   {
     "id": "TYR-023",
@@ -1262,7 +1341,8 @@ const TYRES = [
     ],
     "pattern": "Kruzer",
     "size": "145/80 R12",
-    "mrp": 3690
+    "mrp": 3690,
+    "image": ""
   },
   {
     "id": "TYR-024",
@@ -1276,7 +1356,8 @@ const TYRES = [
     ],
     "pattern": "Actigrip",
     "size": "185/65 R15",
-    "mrp": 4010
+    "mrp": 4010,
+    "image": ""
   },
   {
     "id": "TYR-025",
@@ -1290,7 +1371,8 @@ const TYRES = [
     ],
     "pattern": "Alnac 4G",
     "size": "215/60 R17",
-    "mrp": 3700
+    "mrp": 3700,
+    "image": ""
   },
   {
     "id": "TYR-026",
@@ -1304,7 +1386,8 @@ const TYRES = [
     ],
     "pattern": "Actigrip",
     "size": "9.00-20",
-    "mrp": 8690
+    "mrp": 8690,
+    "image": ""
   },
   {
     "id": "TYR-027",
@@ -1318,7 +1401,8 @@ const TYRES = [
     ],
     "pattern": "Actigrip",
     "size": "8.25-16",
-    "mrp": 8870
+    "mrp": 8870,
+    "image": ""
   },
   {
     "id": "TYR-028",
@@ -1332,7 +1416,8 @@ const TYRES = [
     ],
     "pattern": "Kruzer",
     "size": "6.00-16",
-    "mrp": 10830
+    "mrp": 10830,
+    "image": ""
   },
   {
     "id": "TYR-029",
@@ -1346,7 +1431,8 @@ const TYRES = [
     ],
     "pattern": "Amazer 4G",
     "size": "16.9-28",
-    "mrp": 8970
+    "mrp": 8970,
+    "image": ""
   },
   {
     "id": "TYR-030",
@@ -1360,7 +1446,8 @@ const TYRES = [
     ],
     "pattern": "Vectra",
     "size": "155/65 R13",
-    "mrp": 3770
+    "mrp": 3770,
+    "image": ""
   },
   {
     "id": "TYR-031",
@@ -1374,7 +1461,8 @@ const TYRES = [
     ],
     "pattern": "Ultima Neo",
     "size": "185/65 R15",
-    "mrp": 3710
+    "mrp": 3710,
+    "image": ""
   },
   {
     "id": "TYR-032",
@@ -1388,7 +1476,8 @@ const TYRES = [
     ],
     "pattern": "Blaze",
     "size": "165/80 R14",
-    "mrp": 3070
+    "mrp": 3070,
+    "image": ""
   },
   {
     "id": "TYR-033",
@@ -1402,7 +1491,8 @@ const TYRES = [
     ],
     "pattern": "Blaze",
     "size": "10.00-20",
-    "mrp": 8770
+    "mrp": 8770,
+    "image": ""
   },
   {
     "id": "TYR-034",
@@ -1416,7 +1506,8 @@ const TYRES = [
     ],
     "pattern": "Ultima Neo",
     "size": "12.00-20",
-    "mrp": 8920
+    "mrp": 8920,
+    "image": ""
   },
   {
     "id": "TYR-035",
@@ -1430,7 +1521,8 @@ const TYRES = [
     ],
     "pattern": "Ultima Neo",
     "size": "14.9-28",
-    "mrp": 11210
+    "mrp": 11210,
+    "image": ""
   },
   {
     "id": "TYR-036",
@@ -1444,7 +1536,8 @@ const TYRES = [
     ],
     "pattern": "Vectra",
     "size": "9.5-24",
-    "mrp": 9050
+    "mrp": 9050,
+    "image": ""
   },
   {
     "id": "TYR-037",
@@ -1458,7 +1551,8 @@ const TYRES = [
     ],
     "pattern": "Vectra",
     "size": "4.00-8",
-    "mrp": 2010
+    "mrp": 2010,
+    "image": ""
   },
   {
     "id": "TYR-038",
@@ -1472,7 +1566,8 @@ const TYRES = [
     ],
     "pattern": "Vectra",
     "size": "5.00-10",
-    "mrp": 2320
+    "mrp": 2320,
+    "image": ""
   },
   {
     "id": "TYR-039",
@@ -1486,7 +1581,8 @@ const TYRES = [
     ],
     "pattern": "Duravis",
     "size": "155/65 R13",
-    "mrp": 3730
+    "mrp": 3730,
+    "image": ""
   },
   {
     "id": "TYR-040",
@@ -1500,7 +1596,8 @@ const TYRES = [
     ],
     "pattern": "Ecopia",
     "size": "195/55 R16",
-    "mrp": 3520
+    "mrp": 3520,
+    "image": ""
   },
   {
     "id": "TYR-041",
@@ -1514,7 +1611,8 @@ const TYRES = [
     ],
     "pattern": "Duravis",
     "size": "165/80 R14",
-    "mrp": 4490
+    "mrp": 4490,
+    "image": ""
   },
   {
     "id": "TYR-042",
@@ -1528,7 +1626,8 @@ const TYRES = [
     ],
     "pattern": "Turanza",
     "size": "80/100-18",
-    "mrp": 1920
+    "mrp": 1920,
+    "image": ""
   },
   {
     "id": "TYR-043",
@@ -1542,7 +1641,8 @@ const TYRES = [
     ],
     "pattern": "B290",
     "size": "140/60-17",
-    "mrp": 1640
+    "mrp": 1640,
+    "image": ""
   },
   {
     "id": "TYR-044",
@@ -1556,7 +1656,8 @@ const TYRES = [
     ],
     "pattern": "Duravis",
     "size": "100/80-17",
-    "mrp": 1870
+    "mrp": 1870,
+    "image": ""
   },
   {
     "id": "TYR-045",
@@ -1570,7 +1671,8 @@ const TYRES = [
     ],
     "pattern": "Energy XM2",
     "size": "175/65 R14",
-    "mrp": 3850
+    "mrp": 3850,
+    "image": ""
   },
   {
     "id": "TYR-046",
@@ -1584,7 +1686,8 @@ const TYRES = [
     ],
     "pattern": "Pilot Sport",
     "size": "185/65 R15",
-    "mrp": 5060
+    "mrp": 5060,
+    "image": ""
   },
   {
     "id": "TYR-047",
@@ -1598,7 +1701,8 @@ const TYRES = [
     ],
     "pattern": "Pilot Sport",
     "size": "145/80 R12",
-    "mrp": 3800
+    "mrp": 3800,
+    "image": ""
   },
   {
     "id": "TYR-048",
@@ -1612,7 +1716,8 @@ const TYRES = [
     ],
     "pattern": "Assurance",
     "size": "165/80 R14",
-    "mrp": 3760
+    "mrp": 3760,
+    "image": ""
   },
   {
     "id": "TYR-049",
@@ -1626,7 +1731,8 @@ const TYRES = [
     ],
     "pattern": "Assurance",
     "size": "185/65 R15",
-    "mrp": 3610
+    "mrp": 3610,
+    "image": ""
   },
   {
     "id": "TYR-050",
@@ -1640,7 +1746,8 @@ const TYRES = [
     ],
     "pattern": "Assurance",
     "size": "195/55 R16",
-    "mrp": 4350
+    "mrp": 4350,
+    "image": ""
   },
   {
     "id": "TYR-051",
@@ -1654,7 +1761,8 @@ const TYRES = [
     ],
     "pattern": "Eagle",
     "size": "8.25-16",
-    "mrp": 8600
+    "mrp": 8600,
+    "image": ""
   },
   {
     "id": "TYR-052",
@@ -1668,7 +1776,8 @@ const TYRES = [
     ],
     "pattern": "Eagle",
     "size": "295/95 R20",
-    "mrp": 11110
+    "mrp": 11110,
+    "image": ""
   },
   {
     "id": "TYR-053",
@@ -1682,7 +1791,8 @@ const TYRES = [
     ],
     "pattern": "UltraContact",
     "size": "175/65 R14",
-    "mrp": 4690
+    "mrp": 4690,
+    "image": ""
   },
   {
     "id": "TYR-054",
@@ -1696,7 +1806,8 @@ const TYRES = [
     ],
     "pattern": "UltraContact",
     "size": "185/65 R15",
-    "mrp": 4720
+    "mrp": 4720,
+    "image": ""
   },
   {
     "id": "TYR-055",
@@ -1710,7 +1821,8 @@ const TYRES = [
     ],
     "pattern": "UltraContact",
     "size": "155/65 R13",
-    "mrp": 3760
+    "mrp": 3760,
+    "image": ""
   },
   {
     "id": "TYR-056",
@@ -1724,7 +1836,8 @@ const TYRES = [
     ],
     "pattern": "Earth-1",
     "size": "165/80 R14",
-    "mrp": 3520
+    "mrp": 3520,
+    "image": ""
   },
   {
     "id": "TYR-057",
@@ -1738,7 +1851,8 @@ const TYRES = [
     ],
     "pattern": "Advan",
     "size": "175/65 R14",
-    "mrp": 3450
+    "mrp": 3450,
+    "image": ""
   },
   {
     "id": "TYR-058",
@@ -1752,7 +1866,8 @@ const TYRES = [
     ],
     "pattern": "BluEarth",
     "size": "155/65 R13",
-    "mrp": 4420
+    "mrp": 4420,
+    "image": ""
   },
   {
     "id": "TYR-059",
@@ -1766,7 +1881,8 @@ const TYRES = [
     ],
     "pattern": "Earth-1",
     "size": "90/90-18",
-    "mrp": 1680
+    "mrp": 1680,
+    "image": ""
   },
   {
     "id": "TYR-060",
@@ -1780,7 +1896,8 @@ const TYRES = [
     ],
     "pattern": "BluEarth",
     "size": "140/60-17",
-    "mrp": 1630
+    "mrp": 1630,
+    "image": ""
   },
   {
     "id": "TYR-061",
@@ -1794,7 +1911,8 @@ const TYRES = [
     ],
     "pattern": "Advan",
     "size": "110/70-17",
-    "mrp": 1610
+    "mrp": 1610,
+    "image": ""
   },
   {
     "id": "TYR-062",
@@ -1808,7 +1926,8 @@ const TYRES = [
     ],
     "pattern": "Sincera",
     "size": "165/80 R14",
-    "mrp": 3440
+    "mrp": 3440,
+    "image": ""
   },
   {
     "id": "TYR-063",
@@ -1822,7 +1941,8 @@ const TYRES = [
     ],
     "pattern": "Sincera",
     "size": "215/60 R17",
-    "mrp": 3820
+    "mrp": 3820,
+    "image": ""
   },
   {
     "id": "TYR-064",
@@ -1836,7 +1956,8 @@ const TYRES = [
     ],
     "pattern": "Sincera",
     "size": "145/80 R12",
-    "mrp": 4130
+    "mrp": 4130,
+    "image": ""
   },
   {
     "id": "TYR-065",
@@ -1850,7 +1971,8 @@ const TYRES = [
     ],
     "pattern": "Pro Series",
     "size": "80/100-18",
-    "mrp": 1190
+    "mrp": 1190,
+    "image": ""
   },
   {
     "id": "TYR-066",
@@ -1864,7 +1986,8 @@ const TYRES = [
     ],
     "pattern": "Pro Series",
     "size": "100/80-17",
-    "mrp": 1330
+    "mrp": 1330,
+    "image": ""
   },
   {
     "id": "TYR-067",
@@ -1878,7 +2001,8 @@ const TYRES = [
     ],
     "pattern": "Pro Series",
     "size": "90/90-18",
-    "mrp": 1370
+    "mrp": 1370,
+    "image": ""
   },
   {
     "id": "TYR-068",
@@ -1892,7 +2016,8 @@ const TYRES = [
     ],
     "pattern": "Protorq Extreme",
     "size": "4.00-8",
-    "mrp": 1870
+    "mrp": 1870,
+    "image": ""
   },
   {
     "id": "TYR-069",
@@ -1906,7 +2031,8 @@ const TYRES = [
     ],
     "pattern": "Pro Series",
     "size": "4.00-10",
-    "mrp": 1700
+    "mrp": 1700,
+    "image": ""
   },
   {
     "id": "TYR-070",
@@ -1920,7 +2046,8 @@ const TYRES = [
     ],
     "pattern": "Power Trac",
     "size": "14.9-28",
-    "mrp": 10780
+    "mrp": 10780,
+    "image": ""
   },
   {
     "id": "TYR-071",
@@ -1934,7 +2061,8 @@ const TYRES = [
     ],
     "pattern": "Sonarrudra",
     "size": "7.50-16",
-    "mrp": 12540
+    "mrp": 12540,
+    "image": ""
   },
   {
     "id": "TYR-072",
@@ -1948,7 +2076,8 @@ const TYRES = [
     ],
     "pattern": "Milestone",
     "size": "120/70-17",
-    "mrp": 1330
+    "mrp": 1330,
+    "image": ""
   },
   {
     "id": "TYR-073",
@@ -1962,7 +2091,8 @@ const TYRES = [
     ],
     "pattern": "Milestone",
     "size": "100/80-17",
-    "mrp": 1250
+    "mrp": 1250,
+    "image": ""
   },
   {
     "id": "TYR-074",
@@ -1976,7 +2106,8 @@ const TYRES = [
     ],
     "pattern": "Milestone",
     "size": "80/100-18",
-    "mrp": 1350
+    "mrp": 1350,
+    "image": ""
   },
   {
     "id": "TYR-075",
@@ -1990,7 +2121,8 @@ const TYRES = [
     ],
     "pattern": "Milestone",
     "size": "4.00-10",
-    "mrp": 2030
+    "mrp": 2030,
+    "image": ""
   },
   {
     "id": "TYR-076",
@@ -2004,6 +2136,7 @@ const TYRES = [
     ],
     "pattern": "Trail Blazer",
     "size": "6.00-9",
-    "mrp": 1990
+    "mrp": 1990,
+    "image": ""
   }
 ];

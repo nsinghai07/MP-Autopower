@@ -3,6 +3,33 @@
 
   const money = (n) => "₹" + Number(n).toLocaleString("en-IN");
 
+  // ---------- product media (photo, with graceful fallback) ----------
+  window.__mediaFallback = function (img) {
+    const box = img.closest(".sku-media");
+    if (!box) return;
+    box.classList.add("sku-media-empty");
+    box.innerHTML =
+      '<span class="media-badge">' + (img.dataset.badge || "") + '</span>' +
+      '<span class="media-hint">Photo coming soon</span>';
+  };
+
+  function mediaBlock(imageFile, alt, badgeText) {
+    if (imageFile) {
+      return (
+        '<div class="sku-media">' +
+        '<img src="images/' + imageFile + '" alt="' + alt + '" loading="lazy" ' +
+        'data-badge="' + badgeText + '" onerror="__mediaFallback(this)">' +
+        '</div>'
+      );
+    }
+    return (
+      '<div class="sku-media sku-media-empty">' +
+      '<span class="media-badge">' + badgeText + '</span>' +
+      '<span class="media-hint">Photo coming soon</span>' +
+      '</div>'
+    );
+  }
+
   const state = {
     battery: { categories: new Set(), brands: new Set() },
     tyre: { categories: new Set(), brands: new Set() },
@@ -31,6 +58,7 @@
       el.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
     });
     document.querySelectorAll("[data-email]").forEach((el) => (el.textContent = CONFIG.email));
+    document.querySelectorAll("[data-whatsapp-display]").forEach((el) => (el.textContent = CONFIG.whatsappDisplay));
     document.querySelectorAll("a[data-mailto]").forEach((el) => (el.href = "mailto:" + CONFIG.email));
     document.title = CONFIG.businessName + " — Batteries & Tyres, Madhya Pradesh";
   }
@@ -103,6 +131,7 @@
     const card = document.createElement("article");
     card.className = "sku-card";
     card.innerHTML =
+      mediaBlock(b.image, b.brand + " " + b.model, "Ah") +
       '<div class="sku-top">' +
         '<div><div class="sku-brand">' + b.brand + '</div><div class="sku-model">' + b.model + '</div></div>' +
         '<div class="sku-id">' + b.id + '</div>' +
@@ -179,6 +208,7 @@
     const card = document.createElement("article");
     card.className = "sku-card";
     card.innerHTML =
+      mediaBlock(t.image, t.brand + " " + t.pattern, "Tyre") +
       '<div class="sku-top">' +
         '<div><div class="sku-brand">' + t.brand + '</div><div class="sku-model">' + t.pattern + '</div></div>' +
         '<div class="sku-id">' + t.id + '</div>' +

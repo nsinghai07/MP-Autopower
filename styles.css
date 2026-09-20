@@ -521,6 +521,42 @@ section.block:last-of-type { border-bottom: none; }
   align-content: start;
 }
 
+.sku-media {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  background: var(--surface-2);
+  margin: -16px -16px 0;
+  width: calc(100% + 32px);
+}
+.sku-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.sku-media.sku-media-empty {
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  text-align: center;
+  padding: 10px;
+}
+.sku-media-empty .media-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+.sku-media-empty .media-hint {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+
 .sku-top {
   display: flex;
   justify-content: space-between;
