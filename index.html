@@ -1,0 +1,286 @@
+<title>MP AutoPower</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!-- Vercel Web Analytics: only collects data once this site is actually deployed on
+     Vercel (Project Settings → Analytics → Enable). Harmless no-op on any other host. -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">MP</span>
+      <span data-business-name>MP AutoPower</span>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#categories">Shop</a>
+      <a href="#batteries">Batteries</a>
+      <a href="#tyres">Tyres</a>
+      <a href="#services">Services</a>
+      <a href="#regions">Offices</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-sm" data-tel href="tel:">Call</a>
+      <button class="btn btn-volt btn-sm cart-btn" id="open-drawer" type="button">
+        Enquiry <span class="cart-count tabular" id="cart-count" hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-tread" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow" style="color:rgba(238,241,238,0.65)">Batteries · Tyres · Doorstep Fitting · 6 Cities in MP</span>
+      <h1>Power &amp; grip<br>for every <span class="hi-volt">ride</span>,<br>every <span class="hi-ember">road</span> in MP</h1>
+      <p class="hero-sub" data-tagline>Genuine batteries and tyres for cars, bikes, commercial vehicles and tractors — quoted on WhatsApp, fitted at your door, backed by regional offices across Madhya Pradesh.</p>
+      <div class="hero-cta">
+        <button class="btn btn-volt" onclick="document.getElementById('batteries').scrollIntoView({behavior:'smooth'})">Browse batteries</button>
+        <button class="btn btn-ember" onclick="document.getElementById('tyres').scrollIntoView({behavior:'smooth'})">Browse tyres</button>
+        <a class="btn btn-ghost" data-wa data-wa-msg="Hi, I need help choosing a battery/tyre." target="_blank" rel="noopener">Ask on WhatsApp</a>
+      </div>
+      <div class="city-strip" id="city-strip"></div>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-panel-row">
+        <div class="hero-panel-icon icon-volt">Ah</div>
+        <div><div class="hero-panel-title">Genuine brands only</div><div class="hero-panel-desc">Exide, Amaron, SF Sonic, Bosch and more — manufacturing date shown on every battery.</div></div>
+      </div>
+      <div class="hero-panel-row">
+        <div class="hero-panel-icon icon-ember">R14</div>
+        <div><div class="hero-panel-title">All vehicles, all brands</div><div class="hero-panel-desc">Car, bike, truck, tractor and three-wheeler tyres from MRF, CEAT, Apollo, Bridgestone, Michelin and more.</div></div>
+      </div>
+      <div class="hero-panel-row">
+        <div class="hero-panel-icon icon-volt">MP</div>
+        <div><div class="hero-panel-title">6 regional offices</div><div class="hero-panel-desc">Bhopal, Indore, Gwalior, Ashoknagar, Lalitpur and Satna.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+  <section class="block" id="categories">
+    <div class="block-head">
+      <div>
+        <h2>Shop by category</h2>
+        <p class="desc">Jump straight to the vehicle type you're shopping for.</p>
+      </div>
+    </div>
+    <div class="cat-grid" id="category-grid"></div>
+  </section>
+
+  <section class="block" id="batteries">
+    <div class="block-head">
+      <div>
+        <h2>Battery catalog</h2>
+        <p class="desc">Prices shown include the standard exchange discount for handing over your old battery.</p>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="filters" id="battery-filters"></div>
+      <div>
+        <div class="result-bar">
+          <span class="result-count" id="battery-count"></span>
+        </div>
+        <div class="sku-grid" id="battery-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="tyres">
+    <div class="block-head">
+      <div>
+        <h2>Tyre catalog</h2>
+        <p class="desc">All major brands across car, two-wheeler, commercial, tractor and three-wheeler sizes. Fitting and balancing available at every office.</p>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="filters" id="tyre-filters"></div>
+      <div>
+        <div class="result-bar">
+          <span class="result-count" id="tyre-count"></span>
+        </div>
+        <div class="sku-grid" id="tyre-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="block-head">
+      <div>
+        <h2>How it works</h2>
+        <p class="desc">Everything happens over a call or WhatsApp — no showroom visit needed.</p>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <h3>Pick &amp; enquire</h3>
+        <p>Add batteries or tyres to your enquiry list, or just call your nearest office directly.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <h3>Confirm on WhatsApp</h3>
+        <p>We confirm exact stock, final price and the earliest fitting slot for your vehicle.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <h3>Doorstep fitting</h3>
+        <p>Our technician brings the item to your home or office and fits it on the spot.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <h3>Old item exchange</h3>
+        <p>Hand over your old battery or tyre for an on-the-spot exchange discount.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">05</span>
+        <h3>Warranty support</h3>
+        <p>Warranty cards and service records are kept against your phone number at your regional office.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">06</span>
+        <h3>Fleet &amp; tractor accounts</h3>
+        <p>Standing arrangements for commercial fleets and farm equipment across all six offices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="regions">
+    <div class="block-head">
+      <div>
+        <h2>Regional offices</h2>
+        <p class="desc">Urban service coverage across six locations in Madhya Pradesh and neighbouring border towns.</p>
+      </div>
+    </div>
+    <div class="region-grid" id="region-grid"></div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="block-head">
+      <div>
+        <h2>About <span data-business-name>MP AutoPower</span></h2>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p><span data-business-name>MP AutoPower</span> is a new startup built on one idea: every urban customer in Madhya Pradesh should get the best possible deal on batteries and tyres, right in their own city — not just in the big metros.</p>
+        <p>We're launching directly into six cities — Bhopal, Indore, Gwalior, Ashoknagar, Lalitpur and Satna — so each regional office can quote local, competitive rates instead of one-size-fits-all metro pricing.</p>
+        <p>Every order is confirmed on a call or WhatsApp before a technician is dispatched, so you always know the exact brand, model and price before we arrive.</p>
+      </div>
+      <div class="stat-row">
+        <div class="stat-tile"><div class="stat-num tabular">6</div><div class="stat-label">Cities at launch</div></div>
+        <div class="stat-tile"><div class="stat-num tabular">22</div><div class="stat-label">Brands stocked</div></div>
+        <div class="stat-tile"><div class="stat-num tabular">130+</div><div class="stat-label">Catalog SKUs</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="block-head">
+      <div>
+        <h2>Frequently asked</h2>
+      </div>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">Do you deliver and fit at home or office? <span class="chev">+</span></summary>
+        <p class="faq-a">Yes — every battery and tyre order includes doorstep delivery and fitting within our six office service areas.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How does the old battery/tyre exchange work? <span class="chev">+</span></summary>
+        <p class="faq-a">Hand over your old battery or tyre at the time of fitting and the exchange discount shown on the product card is deducted from your bill immediately.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Can I get a quote before deciding? <span class="chev">+</span></summary>
+        <p class="faq-a">Add items to your enquiry list and send it on WhatsApp, or request a callback — either way you get a firm price before anything is dispatched.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you serve commercial fleets and tractors? <span class="chev">+</span></summary>
+        <p class="faq-a">Yes, all six offices handle commercial vehicle and tractor batteries and tyres, including standing fleet accounts.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">What if my city isn't one of the six offices? <span class="chev">+</span></summary>
+        <p class="faq-a">Call your nearest office — many nearby towns are covered on request even outside the core service area.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Contact</h4>
+      <div class="footer-links">
+        <a data-tel href="tel:" data-phone>+91 90000 00001</a>
+        <a data-mailto href="mailto:" data-email>care@mpautopower.example</a>
+        <a data-wa data-wa-msg="Hi, I have a question." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <div class="footer-links">
+        <a href="#batteries">Batteries</a>
+        <a href="#tyres">Tyres</a>
+        <a href="#services">How it works</a>
+      </div>
+    </div>
+    <div>
+      <h4>Offices</h4>
+      <div class="footer-links">
+        <a href="#office-bhopal">Bhopal</a>
+        <a href="#office-indore">Indore</a>
+        <a href="#office-gwalior">Gwalior</a>
+        <a href="#office-ashoknagar">Ashoknagar</a>
+        <a href="#office-lalitpur">Lalitpur</a>
+        <a href="#office-satna">Satna</a>
+      </div>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">© <span id="year"></span> <span data-business-name>MP AutoPower</span>. Sample placeholder site — replace contact details and addresses before launch.</div>
+</footer>
+
+<div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Enquiry list">
+  <div class="drawer-head">
+    <h3>Your enquiry list</h3>
+    <button class="drawer-close" id="drawer-close" aria-label="Close">✕</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+  <div class="drawer-foot">
+    <div class="drawer-total"><span>Estimated total</span><span class="tabular" id="drawer-total-value">₹0</span></div>
+    <button class="btn btn-volt" id="send-enquiry" disabled>Send enquiry on WhatsApp</button>
+    <form class="callback-form" id="callback-form">
+      <span class="eyebrow">Or request a callback</span>
+      <label for="cb-name">Name
+        <input id="cb-name" name="name" type="text" required placeholder="Your name">
+      </label>
+      <label for="cb-phone">Phone
+        <input id="cb-phone" name="phone" type="tel" required placeholder="10-digit mobile number">
+      </label>
+      <label for="cb-city">Nearest office
+        <select id="cb-city" name="city"></select>
+      </label>
+      <label for="cb-time">Best time to call
+        <input id="cb-time" name="time" type="text" placeholder="e.g. after 6 PM">
+      </label>
+      <button class="btn btn-ember btn-sm" type="submit">Request callback</button>
+    </form>
+  </div>
+</aside>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
