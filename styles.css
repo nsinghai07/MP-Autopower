@@ -247,6 +247,8 @@ button, input, select {
 .btn-ghost:hover { background: rgba(128,128,128,0.12); }
 .btn-line { background: transparent; border-color: var(--border); color: var(--ink); }
 .btn-line:hover { border-color: var(--ink-soft); }
+.btn-whatsapp { background: #25d366; color: #06210f; }
+.btn-whatsapp:hover { background: #1fbd5a; }
 .btn-sm { padding: 6px 10px; font-size: 0.8rem; }
 .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
 
